@@ -13,7 +13,7 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "concurrently \"nodemon index.js\" \"cd client && npm run serve\"",
+    "start": "nodemon index.js",
     "heroku-postbuild": "npm install"
   },
   "author": "",
