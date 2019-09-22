@@ -1,9 +1,10 @@
-var app = require('express')();
+var express = require('express');
+var app = express();
 var http = require('http').createServer(app);
 const serveStatic = require('serve-static');
 var io = require('socket.io')(http);
 
-app.use('/', serveStatic('/client/dist/'));
+app.use(express.static('client/dist'));
 app.get("*", (req, res) => {
     res.sendFile(path.resolve(__dirname, "client", "dist", "index.html"));
 });
