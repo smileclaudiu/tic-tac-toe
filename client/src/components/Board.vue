@@ -24,7 +24,6 @@ export default {
     height: 300px;
     font-family: monospace;
     font-size: 6em;
-    display:table;
     float:left;
     margin-right:20px;
     border-collapse: collapse;
